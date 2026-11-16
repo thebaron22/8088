@@ -24,9 +24,6 @@ ASFLAGS  =
 CFLAGS   = -march=i8088 -masm=intel -Os -ffreestanding -fno-builtin -Wall -Wextra -Werror -g1
 LDFLAGS  = -T $(LDS) -Map=$(MAP) --nostdlib
 
-# Find libgcc for 32-bit math helpers (__mulsi3, __divsi3, etc.)
-#LIBGCC   = $(shell $(CC) $(CFLAGS) -print-libgcc-file-name)
-
 .PHONY: all clean disasm
 
 all: $(TARGET) $(LST)
