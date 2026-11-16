@@ -7,10 +7,10 @@ OBJDUMP = ia16-elf-objdump
 SIZE    = ia16-elf-size
 
 # Target files
-TARGET  = sysrom.bin
-ELF     = sysrom.elf
-MAP     = sysrom.map
-LST     = sysrom.lst
+TARGET  = 6850-rom.bin
+ELF     = 6850-rom.elf
+MAP     = 6850-rom.map
+LST     = 6850-rom.lst
 LDS     = memmap.ld
 
 # Source and object files
